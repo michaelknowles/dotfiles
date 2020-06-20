@@ -45,7 +45,7 @@ set modeline
 set backspace=indent,eol,start
 
 " Lines
-set relativenumber
+set number relativenumber
 set ruler
 " Wrapping
 set breakindent
