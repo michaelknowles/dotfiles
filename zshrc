@@ -122,6 +122,9 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
+# Bitwarden autocompletions
+eval "$(bw completion --shell zsh); compdef _bw bw;"
+
 # Aliases
 # Suffixes
 alias -s {jpg,jpeg,png}='sxiv -a'

@@ -7,8 +7,11 @@
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 # }}} End configuration added by Zim install
 
-export ZDIR="$HOME/.z"
+export EDITOR="nvim"
 
+# Directories
+export ZDIR="$HOME/.z"
+# Path
 typeset -U PATH path
 NODE_BIN="$HOME/.node_modules/bin"
 export npm_config_prefix="$HOME/.node_modules"
