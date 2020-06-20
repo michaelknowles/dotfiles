@@ -1,0 +1,6 @@
+configuration {
+  modi: "combi,window,drun";
+  theme: "dracula";
+  font: "LiberationMono 7";
+  combi-modi: "window,drun";
+}
