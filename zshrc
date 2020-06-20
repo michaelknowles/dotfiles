@@ -139,7 +139,9 @@ alias mpvq='mpv --no-audio'
 alias mpvq='mpv --fs'
 
 # Z
-alias ztagls='find -L $ZDIR -samefile'
+function ztagls() {
+    find -L "$ZDIR" -samefile "$1" | grep -v "$ZDIR/data" | awk -F'/' '{print $(NF-1)}'
+}
 alias zff='firefox -new-instance -P black'
 
 # General
