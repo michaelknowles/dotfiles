@@ -9,6 +9,9 @@
 
 export EDITOR="nvim"
 
+# C#
+export DOTNET_CLI_TELEMETRY_OUTPUT=1
+
 # Directories
 export ZDIR="$HOME/.z"
 # Path
