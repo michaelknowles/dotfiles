@@ -123,7 +123,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
 # Bitwarden autocompletions
-eval "$(bw completion --shell zsh); compdef _bw bw;"
+#eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 # Aliases
 # Suffixes
