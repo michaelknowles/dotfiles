@@ -130,6 +130,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias -s {jpg,jpeg,png}='sxiv -a'
 alias -s {mp4}='mpv'
 alias -s pdf='zathura'
+alias -s md='glow'
 
 # Dotfiles
 alias dotfiles-add='mkrc'
@@ -148,8 +149,8 @@ function ztagls() {
 alias zff='firefox -new-instance -P black'
 
 # General
-alias -g G='| rg --smart-case'
 alias rg='rg --smart-case'
+alias -g G='| rg'
 alias ls='exa --group-directories-first'
 alias ll='exa -l --group-directories-first'
 alias la='exa -la --group-directories-first'

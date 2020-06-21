@@ -21,5 +21,6 @@ export npm_config_prefix="$HOME/.node_modules"
 EMACS_BIN="$HOME/.emacs.d/bin"
 GO_BIN="$HOME/go/bin"
 COMPOSER_BIN="$HOME/.config/composer/vendor/bin"
-path=("$HOME/bin" "$NODE_BIN" "$COMPOSER_BIN" "$EMACS_BIN" "$GO_BIN" "$path[@]")
+DOTNET_BIN="$HOME/.dotnet/tools"
+path=("$HOME/bin" "$NODE_BIN" "$DOTNET_BIN" "$COMPOSER_BIN" "$EMACS_BIN" "$GO_BIN" "$path[@]")
 export PATH
