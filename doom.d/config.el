@@ -7,6 +7,16 @@
 (setq company-idle-delay 0.2
       company-minimum-prefix-length 3)
 
+;; Web mode
+(add-to-list 'auto-mode-alist '("\\.cshtml\\'" . web-mode))
+(setq web-mode-content-types-alist
+      '(("cshtml" . "\\.cshtml\\'")))
+(defun my-web-mode-hook ()
+  "Hooks to customize web mode"
+  (setq web-mode-enable-auto-pairing t)
+  (setq web-mode-enable-block-face t))
+(add-hook 'web-mode-hook 'my-web-mode-hook)
+
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Mike Knowles"
@@ -56,3 +66,4 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
