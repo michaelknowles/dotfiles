@@ -146,7 +146,7 @@ alias mpvq='mpv --fs'
 function ztagls() {
     find -L "$ZDIR" -samefile "$1" | grep -v "$ZDIR/data" | awk -F'/' '{print $(NF-1)}'
 }
-alias zff='firefox -new-instance -P black'
+alias zff='( firefox -new-instance -P black & )'
 
 # General
 alias rg='rg --smart-case'
@@ -159,6 +159,7 @@ alias ltr='exa -l --sort oldest'
 alias cat='bat'
 alias vim='nvim'
 alias emacs='emacsclient -nc'
+alias ssh='TERM=xterm ssh'
 
 # Nixos
 alias nsearch='nix-env -qa'
