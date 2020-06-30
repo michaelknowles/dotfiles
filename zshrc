@@ -159,7 +159,10 @@ alias ltr='exa -l --sort oldest'
 alias cat='bat'
 alias vim='nvim'
 alias emacs='emacsclient -nc'
+
+# Dev
 alias ssh='TERM=xterm ssh'
+alias npm='pnpm'
 
 # Nixos
 alias nsearch='nix-env -qa'
