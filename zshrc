@@ -127,14 +127,14 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Aliases
 # Suffixes
-alias -s {jpg,jpeg,png}='sxiv -a'
+#alias -s {jpg,jpeg,png}='sxiv -a'
 alias -s {mp4}='mpv'
-alias -s pdf='zathura'
-alias -s md='glow'
+#alias -s pdf='zathura'
+#alias -s md='glow'
 
 # Dotfiles
 alias dotfiles-add='mkrc'
-alias dotfiles-sync='rcup'
+alias dotfiles-sync='rcup -i'
 alias dotfiles-list='lsrc'
 
 # Media
@@ -154,19 +154,16 @@ alias -g G='| rg'
 alias ls='exa --group-directories-first'
 alias ll='exa -l --group-directories-first'
 alias la='exa -la --group-directories-first'
-alias lt='exa -l --sort newest'
-alias ltr='exa -l --sort oldest'
+alias ltr='exa -l --sort newest'
+alias lt='exa -l --sort oldest'
 alias cat='bat'
 alias vim='nvim'
-alias emacs='emacsclient -nc'
+alias svim='sudo -E nvim'
+alias rua='rua --color=auto'
 
 # Dev
 alias ssh='TERM=xterm ssh'
-alias npm='pnpm'
 
-# Nixos
-alias nsearch='nix-env -qa'
-alias nquery='nix-env -qi'
-alias nrebuild='sudo nixos-rebuild switch'
-alias nupdate='sudo nix-channel --update'
-alias nclean='sudo nix-channel --update && sudo nix-collect-garbage -d'
+# asdf
+source /opt/asdf-vm/asdf.sh
+
